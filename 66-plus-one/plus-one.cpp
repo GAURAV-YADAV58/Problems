@@ -5,10 +5,11 @@ public:
             if(digits.at(i) < 9){
                 digits.at(i)++;
                 return digits;
+            }else{
+                digits.at(i) = 0;
             }
-            digits.at(i) = 0;
         }
-        digits.insert(digits.begin() , 1);
-        return digits;  
+        digits.insert(digits.begin(),1);
+        return digits;
     }
 };
